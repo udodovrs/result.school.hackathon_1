@@ -21,7 +21,7 @@ export class ContextMenu extends Menu {
 
     open() {
         document.body.addEventListener('contextmenu', event =>{
-            //event.preventDefault();           
+            event.preventDefault();           
             this.el.classList.add('open');
             randomPlace(this.el, event.pageX, event.pageY, this.el.offsetWidth, this.el.offsetHight);                   
         })

@@ -2,11 +2,7 @@ import {Module} from '../core/module'
 import {random, randomColor, randomPlace} from '../utils'
 
 export class ShapeModule extends Module {
-    trigger(){
-     /*    const isshape = document.body.querySelector('.shape');       
-        if (isshape) {
-            isshape.remove();
-        } */
+    trigger(){     
         const shape = document.createElement('div');            
         const randomWidth = random(100, 400);
         const randomHight = random(100, 500);
